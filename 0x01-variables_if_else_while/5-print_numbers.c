@@ -6,14 +6,14 @@
 *
 * Return: Always 0 (Success)
 */
-int main()
+int main(void)
 {
-int a=48;
+int a = 48;
 while (a <= 57)
 {
 putchar(a);
 a++;
-}  
+}
 putchar('\n');
-return (0); 
+return (0);
 }
