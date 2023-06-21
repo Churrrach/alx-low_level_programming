@@ -36,6 +36,7 @@ else
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
+_putchar(' ');
 _putchar(res + '0');
 }
 b++;
