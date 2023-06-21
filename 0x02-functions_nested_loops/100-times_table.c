@@ -27,6 +27,7 @@ else if (check >= 1)
 int mod = res % 10;
 _putchar(',');
 _putchar(' ');
+_putchar(' ');
 _putchar(check + '0');
 _putchar(mod + '0');
 }
