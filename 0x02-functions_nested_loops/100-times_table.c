@@ -1,16 +1,20 @@
 #include "main.h"
 /**
-*times_table-writes the character c to subnet
-*
+*print_times_table-writes the character c to subnet
+*@n: arg 1
 */
-void times_table(void)
+void print_times_table(int n)
 {
+if (n > 15 || n < 0)
+{
+return;
+}
 int a = 0;
 int b = 0;
-while (a <= 9)
+while (a <= n)
 {
 b = 0;
-while (b <= 9)
+while (b <= n)
 {
 int res = a * b;
 int check = res / 10;
