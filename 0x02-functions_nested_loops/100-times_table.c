@@ -6,12 +6,11 @@
 void print_times_table(int n)
 {
 int a = 0;
-int b = 0;
 if (n > 15 || n < 0)
 return;
-while (a <= n)
+while (a++ <= n)
 {
-b = 0;
+int b = 0;
 while (b <= n)
 {
 int res = a * b;
@@ -47,6 +46,5 @@ _putchar(res + '0');
 b++;
 }
 _putchar('\n');
-a++;
 }
 }

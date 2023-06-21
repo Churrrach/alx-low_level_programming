@@ -1,0 +1,58 @@
+1  #include "main.h"
+     2  /**
+     3  *print_times_table-writes the character c to subnet
+     4  *@n: arg 1
+     5  */
+     6  void print_times_table(int n)
+     7  {
+     8  int a = 0;
+     9  int b = 0;
+    10  if (n > 15 || n < 0)
+    11  {
+    12  return;
+    13  }
+    14  while (a <= n)
+    15  {
+    16  b = 0;
+    17  while (b <= n)
+    18  {
+    19  int res = a * b;
+    20  int check = res / 10;
+    21  if (b == 0)
+    22  {
+    23  _putchar('0');
+    24  }
+    25  else if (check >= 1)
+    26  {
+    27  int mod = res % 10;
+    28  if (check  < 10)
+    29  {
+    30  _putchar(',');
+    31  _putchar(' ');
+    32  _putchar(' ');
+    33  _putchar(check + '0');
+    34  _putchar(mod + '0');
+    35  }
+    36   else
+    37  {
+    38  _putchar(',');
+    39  _putchar(' ');
+    40  _putchar((check / 10) + '0');
+    41  _putchar((check % 10) + '0');
+    42  _putchar(mod + '0');
+    43  }
+    44  }
+    45  else
+    46  {
+    47  _putchar(',');
+    48  _putchar(' ');
+    49  _putchar(' ');
+    50  _putchar(' ');
+    51  _putchar(res + '0');
+    52  }
+    53  b++;
+    54  }
+    55  _putchar('\n');
+    56  a++;
+    57  }
+    58  }
