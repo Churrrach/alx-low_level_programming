@@ -3,8 +3,9 @@
 #include "main.h"
 /**
 * _islower - print characters a-z
-* Return - int
-* c - value to check ascii
+* @c: value to check ascii
+*
+* Return: returns int
 */
 int _islower(int c)
 {

@@ -11,7 +11,7 @@ while (i < 10)
 {
 while (j < 123)
 {
-_putchar(i);
+_putchar(j);
 j++;
 }
 i++;
