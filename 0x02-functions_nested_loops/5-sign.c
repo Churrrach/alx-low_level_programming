@@ -1,5 +1,5 @@
 #include "main.h"
-/**
+11;rgb:0000/0000/0000/**
 *print_sign - writes the character c to stdout
 *
 *@c: c is an ascii character
