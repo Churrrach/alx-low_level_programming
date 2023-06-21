@@ -25,11 +25,22 @@ _putchar('0');
 else if (check >= 1)
 {
 int mod = res % 10;
+if (check  < 10)
+{
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
 _putchar(check + '0');
 _putchar(mod + '0');
+}
+ else
+{
+_putchar(',');
+_putchar(' ');
+_putchar((check / 10) + '0');
+_putchar((check % 10) + '0');
+_putchar(mod + '0');
+}
 }
 else
 {
