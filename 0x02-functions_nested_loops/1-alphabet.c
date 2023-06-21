@@ -1,11 +1,15 @@
 #include <stdio.h>
+#include "main.h"
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
+* print_alphabet - print characters a-z
 */
-int main(void)
+void print_alphabet(void)
 {
-printf("_puchar\n");
-return (0);
+int i = 97;
+while(i < 123)
+{
+_putchar(i);
+i++;
+}
+_putchar('\n');
 }
