@@ -1,25 +1,41 @@
-#include <stdio.h>
-#include <ctype.h>
 #include "main.h"
 /**
-* times_table - print characters a-z
+*times_table-writes the character c to subnet
+*
 */
 void times_table(void)
 {
 int a = 0;
-while (a++ < 10)
-{
 int b = 0;
-while (b++ < 10)
+while (a <= 9)
 {
-if (b != 9)
+b = 0;
+while (b <= 9)
 {
-_putchar(b + '0');
+int res = a * b;
+int check = res / 10;
+if (b == 0)
+{
+_putchar('0');
+}
+else if (check >= 1)
+{
+int mod = res % 10;
 _putchar(',');
 _putchar(' ');
+_putchar(check + '0');
+_putchar(mod + '0');
 }
-_putchar(b + '0');
+else
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar(res + '0');
+}
+b++;
 }
 _putchar('\n');
+a++;
 }
 }

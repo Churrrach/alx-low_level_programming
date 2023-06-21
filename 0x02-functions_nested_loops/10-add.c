@@ -1,13 +1,11 @@
-#include <stdio.h>
 #include "main.h"
 /**
-* add - print characters a-z
-* @a: arg 1
-* @b: arg 2
-*
-* Return: returns OAint
+* add - check the code.
+*@a: first ni
+*@b: second no
+* Return: total sum.
 */
-int add(int a, int b);
+int add(int a, int b)
 {
 return (a + b);
 }

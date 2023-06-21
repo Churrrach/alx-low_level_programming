@@ -1,24 +1,30 @@
-#include <stdio.h>
-#include <ctype.h>
 #include "main.h"
 /**
-* print_sign - print characters a-z
-* @n: value to check ascii
+*print_sign - writes the character c to stdout
 *
-* Return: returns int
+*@c: c is an ascii character
+*
+*c number for paramerter
+*
+* Return: On success 1.
+*
+* On error, -1 is returned, and errno is set appropriately.
 */
-int print_sign(int n)
+int print_sign(int c)
 {
-if (n > 0)
+if (c > 0)
 {
 _putchar('+');
 return (1);
 }
-else if (n < 0)
+else if (c < 0)
 {
 _putchar('-');
 return (-1);
 }
+else
+{
 _putchar('0');
 return (0);
+}
 }
