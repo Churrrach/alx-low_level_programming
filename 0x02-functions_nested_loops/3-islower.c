@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #include "main.h"
 /**
 * _islower - print characters a-z

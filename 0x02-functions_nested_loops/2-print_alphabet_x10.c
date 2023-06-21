@@ -3,7 +3,7 @@
 /**
 * print_alphabet_x10 - print characters a-z
 */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 int i = 0;
 int j = 97;
