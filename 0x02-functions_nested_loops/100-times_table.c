@@ -26,7 +26,7 @@ _putchar(' ');
 _putchar(' ');
 _putchar(res + '0');
 }
-else if (res > 10 && res < 100)
+else if (res >= 10 && res < 100)
 {
 _putchar(',');
 _putchar(' ');
