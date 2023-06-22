@@ -11,7 +11,7 @@ if (n <= 15 && n >= 0)
 for (digit = 0; digit <= n; digit++)
 {
 _putchar('0');
-for (mult = 1; mult <= n; mult++)
+for (mult = 0; mult <= n; mult++)
 {
 _putchar(',');
 _putchar(' ');
