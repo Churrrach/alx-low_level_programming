@@ -8,10 +8,10 @@ void print_times_table(int n)
 int a = 0;
 if (n > 15 || n < 0)
 return;
-while (a++ <= n)
+while (a <= n)
 {
 int b = 0;
-while (b++ <= n)
+while (b <= n)
 {
 int res = a * b;
 if (b == 0)
@@ -42,7 +42,9 @@ _putchar(((res / 10) / 10) + '0');
 _putchar(((res / 10) % 10) + '0');
 _putchar((res % 10) + '0');
 }
+b++;
 }
 _putchar('\n');
+a++;
 }
 }

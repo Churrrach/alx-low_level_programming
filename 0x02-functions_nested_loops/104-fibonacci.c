@@ -7,16 +7,16 @@
 int main(void)
 {
 int count = 0;
-long i = 1;
-long fibo = 1;
+double i = 1;
+double fibo = 1;
 while (count++ < 98)
 {
 if (count == 98)
 {
-printf("%lu", fibo);
+printf("%.0lf", fibo);
 break;
 }
-printf("%lu, ", fibo);
+printf("%.0lf, ", fibo);
 fibo = fibo + i;
 i = fibo - i;
 }
