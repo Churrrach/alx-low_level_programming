@@ -1,50 +1,37 @@
 #include "main.h"
 /**
-*print_times_table-writes the character c to subnet
-*@n: arg 1
+*print_times_table - prints the  times table with
+*@n: parameter
 */
 void print_times_table(int n)
 {
-int a = 0;
-if (n > 15 || n < 0)
-return;
-while (a <= n)
+int digit, mult, result;
+if (n <= 15 && n >= 0)
 {
-int b = 0;
-while (b <= n)
-{
-int res = a * b;
-if (b == 0)
+for (digit = 0; digit <= n; digit++)
 {
 _putchar('0');
-}
-else if (res < 10)
+for (mult = 1; mult <= n; mult++)
 {
 _putchar(',');
 _putchar(' ');
+result = digit * mult;
+if (result <= 99)
 _putchar(' ');
+if (result <= 9)
 _putchar(' ');
-_putchar(res + '0');
-}
-else if (res >= 10 && res < 100)
+if (result >= 100)
 {
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar((res / 10) + '0');
-_putchar((res % 10) + '0');
+_putchar((result / 100) + '0');
+_putchar((result / 10) % 10 + '0');
 }
-else
+else if (result <= 99 && result >= 10)
 {
-_putchar(',');
-_putchar(' ');
-_putchar(((res / 10) / 10) + '0');
-_putchar(((res / 10) % 10) + '0');
-_putchar((res % 10) + '0');
+_putchar((result / 10) + '0');
 }
-b++;
+_putchar((result % 10) + '0');
 }
 _putchar('\n');
-a++;
+}
 }
 }
