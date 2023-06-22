@@ -11,39 +11,37 @@ return;
 while (a++ <= n)
 {
 int b = 0;
-while (b <= n)
+while (b++ <= n)
 {
 int res = a * b;
-int check = res / 10;
 if (b == 0)
 {
 _putchar('0');
 }
- else if (check >= 1)
+else if (res < 10)
 {
-int mod = res % 10;
 _putchar(',');
 _putchar(' ');
- if (check  < 10)
-{
-_putchar(' ');
-_putchar(check + '0');
-_putchar(mod + '0');
-}
-else
-{
-_putchar((check / 10) + '0');
-_putchar((check % 10) + '0');
-_putchar(mod + '0');
-}
-}
-else
-{
 _putchar(' ');
 _putchar(' ');
 _putchar(res + '0');
 }
-b++;
+else if (res > 10 && res < 100)
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar((res / 10) + '0');
+_putchar((res % 10) + '0');
+}
+else
+{
+_putchar(',');
+_putchar(' ');
+_putchar(((res / 10) / 10) + '0');
+_putchar(((res / 10) % 10) + '0');
+_putchar((res % 10) + '0');
+}
 }
 _putchar('\n');
 }

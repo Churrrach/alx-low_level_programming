@@ -6,17 +6,20 @@
 */
 int main(void)
 {
-int sum = 0;
+int count = 0;
 long i = 1;
 long fibo = 1;
-while (fibo <= 4000000)
+while (count++ < 98)
 {
-if (fibo % 2 == 0)
-sum += fibo;
+if (count == 98)
+{
+printf("%lu", fibo);
+break;
+}
+printf("%lu, ", fibo);
 fibo = fibo + i;
 i = fibo - i;
 }
-printf("%d", sum);
 printf("\n");
 return (0);
 }
