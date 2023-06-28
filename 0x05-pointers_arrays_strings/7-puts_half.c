@@ -15,8 +15,8 @@ i++;
 }
 max = i;
 j = max / 2;
-if (j % 2 != 0)
-j = (max / 2);
+if (max % 2 != 0)
+j = ((max-1) / 2) + 1;
 while (j < i)
 {
 _putchar(str[j]);
