@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* keygen - gets the lenght
+* main - gets the lenght
 * @s: a pointer parameter
-* Return: void
+* Return: int
 */
-void main(char *s)
+int main(char *s)
 {
 int i, max, half;
 char first, last;
@@ -24,4 +24,5 @@ s[half] = first;
 s[max - half] = last;
 half--;
 }
+return (0);
 }
