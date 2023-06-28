@@ -5,7 +5,7 @@
 * @s: a pointer parameter
 * Return: void
 */
-void keygen(char *s)
+void main(char *s)
 {
 int i, max, half;
 char first, last;
