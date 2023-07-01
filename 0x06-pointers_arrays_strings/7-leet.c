@@ -1,33 +1,25 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* cap_string - capitalize all word of a string
+* leet - function that encodes a string into 1337
 * @s: string array
 * Return: string array
 */
-char *cap_string(char *s)
+char *leet(char *s)
 {
-int i;
-int prev;
+char rev_val[] ={'1','1','7','7','0','0','3','3','4','4'};
+char rev_low[]= {'l','L','t','T', 'o','O','e','E','a','A'};
+int i, j;
 for (i = 0; s[i] != '\0'; i++)
 {
-prev = i - 1;
-if (s[i] >= 'a' && s[i] <= 'z')
+j = 0;
+while (j < 9)
 {
-if (i == 0)
-s[i] = s[i] - 32;
-else if (s[prev] >= 9 && s[prev] <= 10)
-s[i] = s[i] - 32;
-else if (s[prev] >= 32 && s[prev] <= 34)
-s[i] = s[i] - 32;
-else if (s[prev] >= 40 && s[prev] <= 41)
-s[i] = s[i] - 32;
-else if (s[prev] == 46)
-s[i] = s[i] - 32;
-else if (s[prev] == 59)
-s[i] = s[i] - 32;
-else if (s[prev] == 123 || s[prev] == 125)
-s[i] = s[i] - 32;
+if(s[i] == rev_low[j])
+{
+s[i] = rev_val[j];
+}
+j++;
 }
 }
 return (s);
