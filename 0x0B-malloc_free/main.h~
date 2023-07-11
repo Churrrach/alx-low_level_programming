@@ -1,0 +1,4 @@
+#IFNDEF MAIN_H
+DEF MAIN_H
+char *create_array(unsigned int size, char c);
+#ENDIF
