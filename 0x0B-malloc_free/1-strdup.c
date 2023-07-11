@@ -2,28 +2,27 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _strdup - name os function
- * @str: pointe to string
- *
- * Return: pointe to the string
+* _strdup - gets the lenght
+* @str: a pointer parameter
+* Return: pointer
 */
 char *_strdup(char *str)
 {
-char *p;
-int i, size = 0;
-while (str[size] != '\0')
-{
-size++;
-}
-if (size == 0)
+int i, j = 0;
+char *s;
+if (str == NULL)
 return (NULL);
-p = malloc(size * sizeof(char) + 1);
-if (p == NULL)
-return (NULL);
-for (i = 0; i < size; i++)
+while (str[j] != '\0')
 {
-p[i] = str[i];
+j++;
 }
-p[size] = '\0';
-return p;
+s = malloc(j *sizeof(char) + 1);
+if (s == NULL)
+return (NULL);
+for (i = 0; i < j; i++)
+{
+s[i] = str[i];
+}
+s[i] = '\0';
+return (s);
 }

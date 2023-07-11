@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
+0;276;0c#include <stdlib.h>
 #include "main.h"
 /**
 * str_concat - coy strings
 * @s1: arg1
 * @s2: arg2
-* 
+*
 * Return: pointer
 */
 
@@ -25,10 +25,8 @@ while (s2[size_s2] != '\0')
 {
 size_s2++;
 }
-size = size_s1 + size_s2; 
-if (size == 0)
-return (NULL);
-p = malloc(size * sizeof(char) + 1);
+size = size_s1 + size_s2;
+p = malloc(sizeof(char) * size + 1);
 if (p == NULL)
 return (NULL);
 for (i = 0; i < size_s1; i++)
@@ -40,5 +38,5 @@ for (i = 0; i < size_s2; i++)
 p[size_s1 + i] = s2[i];
 }
 p[size] = '\0';
-return p;
+return (p);
 }
