@@ -1,5 +1,5 @@
 #include <stdio.h>
-11;rgb:0000/0000/0000#include <stdlib.h>
+#include <stdlib.h>
 #include "main.h"
 /**
 * str_concat - coy strings
@@ -11,7 +11,12 @@
 
 char *str_concat(char *s1, char *s2)
 {
-char *p, size_s1 = 0, size_s2 = 0, size;
+char *p;
+int i, size_s1 = 0, size_s2 = 0, size;
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
 while (s1[size_s1] != '\0')
 {
 size_s1++;
@@ -26,11 +31,11 @@ return (NULL);
 p = malloc(size * sizeof(char) + 1);
 if (p == NULL)
 return (NULL);
-for (int i = 0; i < size_s1; i++)
+for (i = 0; i < size_s1; i++)
 {
 p[i] = s1[i];
 }
-for (int i = 0; i < size_s2; i++)
+for (i = 0; i < size_s2; i++)
 {
 p[size_s1 + i] = s2[i];
 }

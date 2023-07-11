@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#Include "main.h"
+#include "main.h"
 /**
  * _strdup - name os function
  * @str: pointe to string

@@ -2,33 +2,33 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-* alloc_grid - coy strings
-* @width: arg1
-* @height: arg2
-* 
-* Return: pointer
+* alloc_grid - gets the lenght
+* @width: a pointer parameter
+* @height: lenght
+* Return: allo
 */
 int **alloc_grid(int width, int height)
 {
-int **p, i;
-int size = width * height;
-if (size <= 0)
+int **grid, i;
+if (width <= 0 || height <= 0)
 return (NULL);
-p = (int **)malloc(width * sizeof(int *));
-if (p == NULL)
+grid =  (int **) malloc(height * sizeof(int *));
+if (grid == NULL)
 return (NULL);
-for (i = 0; i < width; i++)
+for (i = 0; i < height; i++)
 {
-p[i] = malloc(height * sizeof(int));
-if (p[i] == NULL)
+grid[i] = malloc(width * sizeof(int));
+if (grid[i] == NULL)
 {
-while (i > 0)
+while (i >= 0)
 {
-free(p[i]);
+free(grid[i]);
 i--;
 }
-free(p);
+free(grid);
+return (NULL);
 }
 }
-return p;
+return (grid);
+
 }
