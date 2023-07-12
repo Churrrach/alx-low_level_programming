@@ -53,7 +53,7 @@ for (j = 0; j < leng(str, '\0'); j++)
 {
 if (str[j] != ' ')
 {
-if ((str[j-1] == ' ' & str[j +1] != ' ') || j == 0)
+if ((str[j-1] == ' ' && str[j +1] != ' ') || j == 0)
 {
 if (k)
 i++;
