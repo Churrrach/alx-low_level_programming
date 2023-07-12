@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+0;276;0c#include <stdlib.h>
 #include "main.h"
 /**
 * leng - gets the lenght
@@ -25,7 +25,7 @@ int cou(char *s)
 int l = leng(s, '\0'), j = 0, k = 0;
 while(j < l)
 {
-if ((s[j - 1] == ' ' & s[j + 1] != ' ') || j == 0)
+if ((s[j - 1] == ' ' && s[j + 1] != ' ') || j == 0)
 {
 k++;
 }
