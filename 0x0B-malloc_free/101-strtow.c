@@ -23,7 +23,7 @@ return (i);
 int cou(char *s)
 {
 int l = leng(s, '\0'), j = 0, k = 0;
-while(j < l)
+while (j < l)
 {
 if ((s[j - 1] == ' ' && s[j + 1] != ' ') || j == 0)
 {
@@ -45,7 +45,7 @@ char **p;
 if (str == NULL || leng(str, '\0') == 0)
 return (NULL);
 l = cou(str);
-p = (char **) malloc( sizeof(char *) * l + 1);
+p = (char **) malloc(sizeof(char *) * l + 1);
 if (p == NULL)
 return (NULL);
 p[l] = NULL;
@@ -53,7 +53,7 @@ for (j = 0; j < leng(str, '\0'); j++)
 {
 if (str[j] != ' ')
 {
-if ((str[j-1] == ' ' && str[j +1] != ' ') || j == 0)
+if ((str[j - 1] == ' ' && str[j + 1] != ' ') || j == 0)
 {
 if (k)
 {
@@ -69,5 +69,5 @@ p[i][k] = str[j];
 k++;
 }
 }
-return p;
+return (p);
 }
