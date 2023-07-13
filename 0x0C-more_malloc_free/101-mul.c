@@ -1,15 +1,22 @@
+#include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
-#include "main.h"
 /**
-* malloc_checked - allocates memory using malloc
-* @b: int size of memory to be allocated
+* main - allocates memory using malloc
+* @argc: int size of memory to be allocated
+* @argv: number of arguments
 * Return: pointer to allocated memory
 */
-void *malloc_checked(unsigned int b)
+int main(int argc, char *argv[])
 {
-void *ptr;
-ptr = malloc(b);
-if (ptr == NULL)
+int mul;
+if (argc == 3 && atoi(argv[1]) && atoi(argv[2]))
+{
+mul = atoi(argv[1]) * atoi(argv[2]);
+printf("%d\n", mul);
+return (0);
+}
+printf("Error\n");
 exit(98);
-return (ptr);
+return (1);
 }
