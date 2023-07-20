@@ -1,10 +1,8 @@
 #include <stdlib.h>
 #include "3-calc.h"
 /**
-* int_index - gets string length
-* @array: st dog
-* @size: name of dog
-* @cmp: name o func
+* get_op_func - gets string length
+* @s: st dog
 * Return: int val
 */
 int (*get_op_func(char *s))(int, int)

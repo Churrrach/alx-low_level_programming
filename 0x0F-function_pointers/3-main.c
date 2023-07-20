@@ -24,7 +24,7 @@ exit(99);
 }
 a = atoi(argv[1]);
 b = atoi(argv[3]);
-result = op(a,b);
+result = op(a, b);
 printf("%d\n", result);
 return (0);
 }
