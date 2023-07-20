@@ -7,7 +7,7 @@
 */
 int op_add(int a, int b)
 {
-return (a + b);  
+return (a + b);
 }
 /**
  * opp_sub - substracts
@@ -47,5 +47,5 @@ return (a / b);
  */
 int op_mod(int a, int b)
 {
-return (a % b); 
+return (a % b);
 }
