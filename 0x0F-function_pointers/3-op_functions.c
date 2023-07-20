@@ -1,13 +1,13 @@
 #include <stdlib.h>
 /**
 * op_add - prints a name
-* @a: number 1
-* @b: number 2
+* @b: number 1
+* @a: number 2
 * Return: int
 */
 int op_add(int a, int b)
 {
-return (a + b);
+return (a + b);  
 }
 /**
  * opp_sub - substracts
@@ -47,5 +47,5 @@ return (a / b);
  */
 int op_mod(int a, int b)
 {
-return (a % b);
+return (a % b); 
 }
